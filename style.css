@@ -1,0 +1,119 @@
+@import url("nord.css");
+
+* {
+  font-family: Maple Mono;
+  font-size: 10px;
+  min-height: 0;
+  padding-right: 0px;
+  padding-left: 0px;
+  padding-bottom: 0px;
+}
+
+#waybar {
+  background: transparent;
+}
+
+#workspaces {
+  border-radius: 9px;
+  margin: 5px;
+  background-color: @nord2;
+  margin-left: 2px;
+}
+
+#workspaces button {
+  color: @nord6;
+  border-radius: 5px;
+  padding: 0.4rem;
+}
+
+#workspaces button.active {
+  color: @nord8;
+  border-radius: 5px;
+}
+
+#workspaces button:hover {
+  color: @nord9;
+  border-radius: 5px;
+}
+
+button {
+  background: transparent;
+}
+
+#custom-music,
+#tray,
+#backlight,
+#clock,
+#battery,
+#pulseaudio,
+#custom-lock{
+  color: @nord13;
+  background-color: @nord2;
+  padding: 0.5rem 1rem;
+  margin: 5px 0;
+}
+#language,
+#cava,
+#custom-power {
+  background-color: @nord2;
+  padding: 0.5rem 1rem;
+  margin: 5px 0;
+}
+
+#clock {
+  color: @nord10;
+  border-radius: 9px;
+}
+
+#battery {
+  color: @nord10;
+}
+
+#battery.charging {
+  color: @nord14;
+}
+
+#battery.warning:not(.charging) {
+  color: @nord11;
+}
+
+#backlight {
+  color: @nord9;
+}
+
+#backlight,
+#battery {
+  border-radius: 0;
+}
+
+#pulseaudio {
+  color: @nord7;
+  border-radius: 9px 0px 0px 9px;
+}
+
+#cava {
+  color: @nord10;
+  border-radius: 9px 0px 0px 9px;
+  margin-left: 5px;
+  margin-right: 0;
+  padding-right: 0;
+}
+
+#custom-music {
+  color: @nord8;
+  border-radius: 9px;
+}
+
+#language {
+  color: @nord7;
+}
+
+#custom-power {
+  margin-right: 2px;
+  border-radius: 0px 9px 9px 0px;
+  color: @nord11;
+}
+
+#workspaces button.urgent {
+  color: @nord11;
+}
